@@ -1,0 +1,15 @@
+{
+  "name": "bamazon",
+  "version": "0.0.1",
+  "description": "It's a homework assignment, an amazon ripoff",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ME (GSMIV)",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "mysql": "^2.17.1"
+  }
+}
