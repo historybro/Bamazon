@@ -54,8 +54,14 @@ function start() {
 }
 
 function sale() {
-    products();
-    start();    
+    connection.query("SELECT * FROM products", function(err, res) {
+        if (err) throw err;
+        for (var i = 0; i < res.length; i++) {
+            console.log("\nID: "+res[i].item_id+" Name: "
+            +res[i].product_name+" Price: "+res[i].price+" Quantity: "+res[i].stock_quantity+"\n");            
+        }
+        start();        
+    });  
 }
 
 function low() {
@@ -70,8 +76,38 @@ function low() {
 }
 
 function add() {
+    console.log("\nUpdating products...\n");
+    inquirer.prompt([
+        {
+            name: "prod",
+            type: "input",
+            message: "What is the id # of the product?"
+        },
+        {
+            name: "amount",
+            type: "input",
+            message: "How many are we adding to the system?"
 
-}
+        }
+    ])
+    .then(function(answer){
+        connection.query(
+            "UPDATE products SET ? WHERE ?",
+            [
+              {
+                stock_quantity: answer.amount
+              },
+              {
+                item_id: answer.prod
+              }
+            ],
+            function(err, res) {
+              console.log(res.affectedRows + " products updated!\n");
+            }
+          );
+          start();
+    });
+}  
 
 function addNew() {
     console.log("\nAdding a new product...\n");
@@ -111,6 +147,7 @@ function addNew() {
               console.log(res.affectedRows + " product inserted!\n");              
             }
         );
+        start();
     });
 }
 
