@@ -11,6 +11,7 @@ This homework assignment was separated into 3 different challenges.
 2. That table was populated with 10 "stock" products.
 
 ![Bamazon](/images/1.PNG)
+
 3. A node application was created to interact with this table. On load it asks if you want to shop or quit (quitting will kill the connection)
 
 ![Bamazon](/images/2.PNG)
