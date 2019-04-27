@@ -8,6 +8,7 @@ This homework assignment was separated into 3 different challenges.
 ### Customer View
 1. Created a MySQl database named "bamazon", and inside of that created a table named "products."
 2. That table was populated with 10 "stock" products.
+![test](/images/3.png)
 ![Bamazon](/images/1.png)
 3. A node application was created to interact with this table. On load it asks if you want to shop or quit (quitting will kill the connection)
 ![Bamazon](/images/2.png)
