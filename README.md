@@ -40,6 +40,7 @@ This homework assignment was separated into 3 different challenges.
 ![Bamazon](/images/manager/newsql.png)
 7. The quit function ends the program and connection to the database.
 
+![Program Opening](/images/1.png)
 
 
 ### Supervisor View
