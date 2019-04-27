@@ -7,6 +7,7 @@ This homework assignment was separated into 3 different challenges.
 
 ### Customer View
 1. Created a MySQl database named "bamazon", and inside of that created a table named "products."
+
 2. That table was populated with 10 "stock" products.
 ![test](/images/3.PNG)
 ![Bamazon](/images/1.PNG)
@@ -23,6 +24,7 @@ This homework assignment was separated into 3 different challenges.
 ![Bamazon](/images/7.PNG)
 8. Finally it will update the amount of the purchased item in the database, and ask the user if they would like to shop or quit.
 ![Bamazon](/images/8.PNG)
+
 
 ### Manager View
 1. This uses the same MySQL database created above.
@@ -43,6 +45,7 @@ This homework assignment was separated into 3 different challenges.
 
 ![Program Opening](/images/1.PNG)
 
+7. The quit function ends the program and connection to the database.
 
 ### Supervisor View
 - update soon -
