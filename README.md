@@ -64,7 +64,7 @@ This homework assignment was separated into 3 different challenges.
 
 6. Add new product allows us to add an entirely new product to the database with all needed information.
 
-![Bamazon](/images/15PNG)
+![Bamazon](/images/15.PNG)
 
 ![Bamazon](/images/16.PNG)
 
